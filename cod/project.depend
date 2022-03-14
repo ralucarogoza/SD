@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1647284148 source:c:\users\calin\desktop\cursuri sem2\sd\project\main.cpp
+	<iostream>
+	<algorithm>
+	<chrono>
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<iomanip>
+	<vector>
+
