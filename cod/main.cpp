@@ -25,7 +25,6 @@ void CountingSort(vector <int>& v,int n)
 {
     int maxim=v[0];
     vector <int> fr;
-    cout<<nmax;
     fr.resize(nmax,0);
     for(int i=0;i<n;i++)
     {
@@ -117,7 +116,7 @@ void RadixSort(vector <int>& v, int n)
         CountSort(v, n, p);
 }
 
-int verificare(vector <int>& v2, vector <int>& v,int n)
+int verificare(vector <int> v2, vector <int>& v,int n)
 {
     int ok=1;
     sort(v2.begin(), v2.end());
@@ -171,8 +170,6 @@ int main()
         if(verificare(v2,v,n)==1) cout<<"Array-ul a fost sortat corect."<<endl;
         else cout<<"Array-ul nu a fost sortat corect. :("<<endl;
 
-
-
         for(int i=0;i<n;i++)
             v[i]=v2[i];
         cout<<"Timpul de rulare al algoritmului CountingSort este de ";
@@ -184,7 +181,6 @@ int main()
         cout << fixed<< time_taken << setprecision(10)<< " sec" << endl;
         if(verificare(v2,v,n)==1) cout<<"Array-ul a fost sortat corect."<<endl;
         else cout<<"Array-ul nu a fost sortat corect. :("<<endl;
-
 
         vector <int> aux;
         aux.resize(n,0);
@@ -200,7 +196,6 @@ int main()
         if(verificare(v2,v,n)==1) cout<<"Array-ul a fost sortat corect."<<endl;
         else cout<<"Array-ul nu a fost sortat corect. :("<<endl;
 
-
         for(int i=0;i<n;i++)
             v[i]=v2[i];
         cout<<"Timpul de rulare al algoritmului RadixSort este de ";
@@ -212,7 +207,6 @@ int main()
         cout << fixed<< time_taken << setprecision(10)<< " sec" << endl;
         if(verificare(v2,v,n)==1) cout<<"Array-ul a fost sortat corect."<<endl;
         else cout<<"Array-ul nu a fost sortat corect. :("<<endl;
-
 
         for(int i=0;i<n;i++)
             v[i]=v2[i];
